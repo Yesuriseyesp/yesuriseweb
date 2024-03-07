@@ -1,0 +1,234 @@
+/* General styling */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* iOS font */
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #343a40; /* Default text color */  
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Header section */
+.header {
+  padding: 60px 0; /* Increased padding for better spacing */
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3.5rem; /* Larger font size for the main header */
+  margin-bottom: 30px;
+  color: #007bff;
+}
+
+.header h2 {
+  font-size: 2.5rem; /* Larger font size for the subheader */
+  font-weight: 600; /* Increased font weight */
+}
+
+/* Get Started button */
+/* Get Started button */
+.get-started-button,
+.watch-how-it-works-button {
+  padding: 12px 24px; /* Adjusted padding for buttons */
+  font-size: 1.1rem; /* Decreased font size for buttons */
+  border-radius: 30px; /* Increased border-radius for a rounder button */
+  margin-top: 30px; /* Adjusted margin-top for buttons */
+  margin-right: 20px; /* Add space between buttons */
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative; /* Added for positioning the image */
+}
+
+.get-started-button::after,
+.watch-how-it-works-button::after {
+/* Insert image */
+  display: block;
+  position: center;
+  bottom: -40px; /* Adjust as needed to position the image */
+  left: 50%; /* Position in the middle */
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Rest of your CSS styles */
+
+
+.get-started-button {
+  background-image: linear-gradient(to right, #8A2BE2, #4B0082); /* Violet gradient */
+  border: 2px solid #8A2BE2;
+  color: #fff;
+}
+
+.get-started-button:hover {
+  background-image: linear-gradient(to right, #4B0082, #8A2BE2); /* Violet gradient */
+  transform: translateY(-3px); /* Increased button hover effect */
+}
+
+.watch-how-it-works-button {
+  background-image: linear-gradient(to right,  #4B0082,#8A2BE2,); /* Violet gradient */
+  border: 2px solid #8A2BE2;
+  color: #4B0082;
+}
+
+.watch-how-it-works-button:hover {
+  background-image: linear-gradient(to right, #4B0082, #8A2BE2); /* Violet gradient */
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Content section */
+.content-section {
+  margin-top: 100px; /* Increased margin-top for better separation */
+  text-align: center;
+}
+
+.content-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.content-section p {
+  font-size: 1.4rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+  animation: fadeAnimation 1s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  padding: 60px 0;
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2rem; /* Adjusted font size for better readability */
+  margin-bottom: 20px;
+}
+
+/* Floating animation */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Increased floating height */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Fade animation */
+@keyframes fadeAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem; /* Decreased font size for smaller screens */
+    margin-bottom: 15px; /* Adjusted margin bottom */
+  }
+
+  .header h2 {
+    font-size: 1.5rem; /* Decreased font size for smaller screens */
+  }
+
+  .get-started-button,
+  .watch-how-it-works-button {
+    margin-top: 15px; /* Adjusted margin-top for smaller screens */
+  }
+
+  .get-started-button,
+  .watch-how-it-works-button {
+    padding: 8px 16px; /* Adjusted button padding for smaller screens */
+    font-size: 0.9rem; /* Decreased font size for smaller screens */
+  }
+}
+.star-animation {
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ffd700; /* Star color */
+  border-radius: 50%;
+  animation: star-fall 3s linear infinite; /* Apply animation */
+}
+
+@keyframes star-fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 1;
+  }
+}
+@keyframes star-twinkle {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.bubble {
+  width: 20px;
+  height: 20px;
+  background-color: #1a1a1a; /* White color */
+  border-radius: 50%; /* Make it round */
+  position: absolute; /* Position it absolutely */
+  animation: floatBubbles 4s ease-in-out infinite; /* Apply animation */
+}
+
+@keyframes floatBubbles {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Define styles for the bubbles */
+.bubble {
+  width: 20px;
+  height: 20px;
+  background-color: #ffd700; /* Yellow color */
+  border-radius: 50%; /* Make it round */
+  position: absolute; /* Position it absolutely */
+  animation: floatBubbles 4s ease-in-out infinite; /* Apply animation */
+}
+
+/* Define keyframes for the float animation */
+@keyframes floatBubbles {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
