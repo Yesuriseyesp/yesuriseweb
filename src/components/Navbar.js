@@ -51,9 +51,9 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to="/careers">Careers</Link>
         </li>
-        <li className="nav-item">
-          <Link to="/blogs">Blogs</Link> {/* Added Blogs link */}
-        </li>
+        {/* <li className="nav-item">
+          <Link to="/blogs">Blogs</Link> Added Blogs link
+        </li> */}
         <li className="nav-item">
           <Link to="/contact">Contact</Link>
         </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
             <li><Link to="/about">About</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/careers">Careers</Link></li>
-            <li><Link to="/blogs">Blogs</Link></li> {/* Added Blogs link */}
+            {/* <li><Link to="/blogs">Blogs</Link></li> Added Blogs link */}
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>

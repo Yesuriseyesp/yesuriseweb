@@ -5,7 +5,9 @@ import './services.css'; // Import CSS for styling
 import socialMediaImage from './5618169.jpg';
 import SEO from './32010.jpg';
 import ppcImage from './1835.jpg';
-// import ppcImage from './images/ppc.jpg';
+import content from './1113.jpg';
+import brand from './7781425.jpg';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -19,20 +21,21 @@ const services = [
     image: socialMediaImage // Using imported image
   },
   {
-    title: "Pay-Per-Click (PPC) Advertising",
+    title: "Pay-Per-Click (PPC) Ads",
     description: "Run targeted advertising campaigns on search engines and social media platforms to drive immediate results.",
     image: ppcImage // Using imported image
   },
   {
-    title: "Pay-Per-Click (PPC) Advertising",
-    description: "Run targeted advertising campaigns on search engines and social media platforms to drive immediate results.",
-    image: ppcImage // Using imported image
+    title: "Content Marketing",
+    description: "Drive engagement and conversions with strategic content creation tailored to your target audience's needs and preferences.",
+    image: content // Using imported image
   },
-  {
-    title: "Pay-Per-Click (PPC) Advertising",
-    description: "Run targeted advertising campaigns on search engines and social media platforms to drive immediate results.",
-    image: ppcImage // Using imported image
-  },
+ {
+  title: "Branding",
+    description: "Craft a compelling brand identity to resonate with your audience, fostering emotional connections and customer loyalty.",
+    image: brand // Using imported image
+ }
+ 
   // Add more services as needed
 ];
 
@@ -46,7 +49,10 @@ const Carousel = ({ services }) => {
             <div className="carousel-content">
               <h2 className="carousel-title">{service.title}</h2>
               <p className="carousel-description">{service.description}</p>
-              <button className="carousel-button">Learn More</button> {/* Button added */}
+              <Link to="/contact">
+              <button className="carousel-button">Reach Us</button> 
+              </Link>
+           {/* Button added */}
             </div>
           </div>
         ))}
