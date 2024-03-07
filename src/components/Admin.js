@@ -1,6 +1,5 @@
 import React from 'react';
 import firebase from './firebase';
-import XLSX from 'xlsx'; // Import xlsx library
 import { utils, writeFile } from 'xlsx';
 
 import './admin.css'; // Import CSS file for styling
