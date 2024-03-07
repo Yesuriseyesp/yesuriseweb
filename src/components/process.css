@@ -1,0 +1,100 @@
+.process-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.process-steps {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.process-step {
+  flex: 0 0 auto;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+}
+
+.process-step h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.process-step p {
+  font-size: 16px;
+  color: #666;
+}
+
+.step-icon {
+  font-size: 48px;
+  font-weight: bold;
+  color: #9700bc;
+  margin-bottom: 20px;
+}
+
+.rolling-ball {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 6px;
+  background-color: #9700bc;
+  border-radius: 3px;
+  transition: left 0.3s ease;
+}
+
+.process-steps {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.process-steps::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+/* Additional styling for process steps */
+.process-step {
+  flex: 0 0 auto;
+  width: 250px; /* Adjust the width as needed */
+  padding: 20px;
+  margin-right: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+  .process-steps {
+    overflow-x: scroll;
+  }
+}

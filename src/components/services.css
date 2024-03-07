@@ -1,0 +1,110 @@
+/* services.css */
+
+/* App container */
+.app-container {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  max-width: 1890px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title */
+.app-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Carousel container */
+.carousel-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0;
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 20px;
+}
+
+/* Carousel item */
+.carousel-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  width: 280px; /* Set fixed width for each carousel item */
+  border-radius: 20px; /* Rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Carousel item image */
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the entire box */
+  border-radius: 20px; /* Rounded corners */
+  transition: transform 0.3s ease;
+}
+
+/* Carousel item hover effect */
+.carousel-item:hover {
+  transform: translateY(-5px); /* Move the item up slightly on hover */
+}
+
+/* Carousel item image hover effect */
+.carousel-item:hover .carousel-image {
+  transform: scale(1.05); /* Enlarge the image on hover */
+}
+
+/* Carousel content */
+.carousel-content {
+  padding: 20px;
+}
+
+/* Carousel title */
+.carousel-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Carousel description */
+.carousel-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Button styling */
+.carousel-button {
+  background-color: #8A2BE2; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Padding around the button text */
+  font-size: 16px; /* Button text size */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Button border radius */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.carousel-button:hover {
+  background-color: #4B0082; /* Darker background color on hover */
+}
+.carousel-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.carousel-container::-webkit-scrollbar {
+  width: 0; /* Hide the scrollbar */
+}
