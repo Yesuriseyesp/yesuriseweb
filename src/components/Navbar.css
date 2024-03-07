@@ -1,0 +1,112 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; /* Navbar background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Navbar shadow */
+}
+
+/* Brand or Logo */
+.navbar-brand a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #9700bc; /* Brand color */
+}
+
+/* Navigation Links */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Ensure links are vertically aligned */
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #000000; /* Navigation link color */
+  font-weight: bold; /* Make the links bolder */
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #9700bc; /* Navigation link hover color */
+}
+
+/* Responsive Toggle Button */
+.navbar-toggle {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar-icon {
+  font-size: 24px;
+}
+
+/* Overlay Menu */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Overlay background color */
+  z-index: 999;
+}
+
+.overlay-menu {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-menu li {
+  margin-bottom: 20px;
+}
+
+.overlay-menu a {
+  color: #ffffff; /* Overlay menu link color */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.overlay-menu a:hover {
+  color: #9700bc; /* Overlay menu link hover color */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #ffffff; /* Navbar background color */
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #cccccc; /* Navbar border color */
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .overlay {
+    display: block;
+  }
+}
