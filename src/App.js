@@ -14,6 +14,7 @@ import Career from './components/career'
 import BlogCreator from './components/blog';
 import BlogsPage from './components/blogview';
 import CookieConsentBanner from './components/Cookie';
+import BlogDetails from './components/blogdetail';
 
 function App() {
   return (
@@ -29,8 +30,7 @@ function App() {
           <Route path="/services" element={<Service />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/careers" element={<Career />} />
-          <Route path="/create-blog" element={<BlogCreator />} />
-          <Route path="/blogs" element={<BlogsPage />} />
+       
 
          
         </Routes>
