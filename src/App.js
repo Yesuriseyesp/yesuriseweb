@@ -11,10 +11,9 @@ import Service from './components/services';
 // import Footer from './components/Footer';
 import Admin from './components/Admin'
 import Career from './components/career'
-import BlogCreator from './components/blog';
-import BlogsPage from './components/blogview';
+
 import CookieConsentBanner from './components/Cookie';
-import BlogDetails from './components/blogdetail';
+
 
 function App() {
   return (
