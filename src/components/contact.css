@@ -1,0 +1,59 @@
+.gradient-section {
+    position: relative;
+    height: 200px; /* Adjust the height as needed */
+    background: linear-gradient(to bottom right, #38006b, #6e00e0); /* Darker background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Align items vertically */
+    padding: 20px; /* Add padding for better spacing */
+    /* border-radius: 20px; Rounded corners */
+  }
+  
+  .bubbles {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: float 3s infinite ease-in-out alternate; /* Adjust animation duration */
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1); /* Original size */
+    }
+    50% {
+      transform: translateY(-20px) scale(0.8); /* Move up and slightly smaller */
+    }
+    100% {
+      transform: translateY(0) scale(1); /* Back to original size */
+    }
+  }
+  
+  .contact-button {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #4B0082;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for button shadow */
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  .contact-button:hover {
+    background-color: #8A2BE2;
+    color: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover */
+  }
+  
+  .connect-text {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  

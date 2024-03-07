@@ -1,0 +1,24 @@
+/* Styles for the career component */
+.career-container {
+    text-align: center;
+  }
+  
+  .career-heading {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  
+  .career-button {
+    padding: 10px 20px;
+    background-color: #9f40f8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .career-button:hover {
+    background-color: #35005b,
+  }
+  
